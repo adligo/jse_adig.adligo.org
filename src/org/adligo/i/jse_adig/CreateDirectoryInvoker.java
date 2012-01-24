@@ -9,6 +9,7 @@ import org.adligo.i.util.client.StringUtils;
 
 public class CreateDirectoryInvoker extends BaseGInvoker implements I_GCheckedInvoker<String, Boolean> {
 
+	public static final String WAS_NOT_ABLE_TO_CREATE_THE_DIRECTORY_S = " was NOT able to create the directory(s) ";
 	public static final String REQUIRES_A_NON_NULL_DIRECTORY_STRING = " requires a non null directory string.";
 
 	public CreateDirectoryInvoker() {
@@ -24,6 +25,11 @@ public class CreateDirectoryInvoker extends BaseGInvoker implements I_GCheckedIn
 					REQUIRES_A_NON_NULL_DIRECTORY_STRING);
 		}
 		File fullDir = new File(directory);
-		return fullDir.mkdirs();
+		boolean result = fullDir.mkdirs();
+		if (!result) {
+			throw new InvocationException("" + this.getClass().getName() +
+					WAS_NOT_ABLE_TO_CREATE_THE_DIRECTORY_S + directory);
+		}
+		return result;
 	}
 }
