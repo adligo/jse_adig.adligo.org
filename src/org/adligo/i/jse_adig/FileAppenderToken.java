@@ -23,7 +23,7 @@ public class FileAppenderToken {
 					FILE_APPENDER_TOKEN_DOES_NOT_ACCEPT_A_NULL_FILE_APPENDER);
 		}
 		data = p_data;
-		if (appender == null) {
+		if (data == null) {
 			throw new NullPointerException(
 					FILE_APPENDER_TOKEN_DOES_NOT_ACCEPT_NULL_DATA);
 		}
@@ -38,7 +38,7 @@ public class FileAppenderToken {
 					FILE_APPENDER_TOKEN_DOES_NOT_ACCEPT_A_NULL_FILE_APPENDER);
 		}
 		lines = p_lines;
-		if (appender == null) {
+		if (lines == null) {
 			throw new NullPointerException(
 					FILE_APPENDER_TOKEN_DOES_NOT_ACCEPT_A_NULL_LINES_COLLECTION);
 		}
