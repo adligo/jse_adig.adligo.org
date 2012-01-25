@@ -23,4 +23,10 @@ public class JseInvokerNames {
 	 * accepts a string returns a boolean
 	 */
 	public static final String FILE_EXISTS_INVOKER = PACKAGE_NAME + "d";
+	
+	/**
+	 * I_GCheckedInvoker
+	 * accepts a FileAppenderParams object and returns a FileAppender
+	 */
+	public static final String FILE_APPENDER_FACTORY_INVOKER = PACKAGE_NAME + "e";
 }

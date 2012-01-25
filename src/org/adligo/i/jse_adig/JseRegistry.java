@@ -19,5 +19,8 @@ public class JseRegistry {
 				JseInvokerNames.MOVE_FILE_INVOKER, 
 				new MoveFileInvoker());
 		
+		GRegistry.addCheckedInvoker(
+				JseInvokerNames.FILE_APPENDER_FACTORY_INVOKER, 
+				new FileAppenderFactoryInvoker());
 	}
 }
