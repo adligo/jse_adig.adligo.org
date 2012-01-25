@@ -10,12 +10,23 @@ import java.io.FileWriter;
  *
  */
 public class FileAppender {
+	public static final String FILE_APPENDER_DOES_NOT_ACCEPT_A_NULL_WRITER = 
+						"FileAppender does not accept a null writer";
+	public static final String FILE_APPENDER_DOES_NOT_ACCEPT_A_NULL_LINE_FEED = 
+						"FileAppender does not accept a null line feed";
+	
 	private FileWriter writer;
 	private String lineFeed;
 	
-	public FileAppender(FileWriter p, String p_lineFeed) {
+	FileAppender(FileWriter p, String p_lineFeed) {
 		writer = p;
+		if (writer == null) {
+			throw new NullPointerException(FILE_APPENDER_DOES_NOT_ACCEPT_A_NULL_WRITER);
+		}
 		lineFeed = p_lineFeed;
+		if (lineFeed == null) {
+			throw new NullPointerException(FILE_APPENDER_DOES_NOT_ACCEPT_A_NULL_LINE_FEED);
+		}
 	}
 	
 	FileWriter getWriter() {
