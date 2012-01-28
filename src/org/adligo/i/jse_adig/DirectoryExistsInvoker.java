@@ -8,7 +8,7 @@ import org.adligo.i.util.client.StringUtils;
 
 public class DirectoryExistsInvoker extends BaseGInvoker implements I_GInvoker<String, Boolean> {
 
-	public DirectoryExistsInvoker() {
+	DirectoryExistsInvoker() {
 		super(String.class, Boolean.class);
 	}
 

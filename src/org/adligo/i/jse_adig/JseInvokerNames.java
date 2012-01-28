@@ -29,4 +29,17 @@ public class JseInvokerNames {
 	 * accepts a FileAppenderParams object and returns a FileAppender
 	 */
 	public static final String FILE_APPENDER_FACTORY_INVOKER = PACKAGE_NAME + "e";
+	
+	/**
+	 * I_GCheckedInvoker
+	 * accepts a FileAppenderToken object and returns a Boolean
+	 */
+	public static final String FILE_APPENDER_INVOKER = PACKAGE_NAME + "f";
+	
+
+	/**
+	 * I_GInvoker
+	 * accepts a FileAppenderToken object and returns a Boolean
+	 */
+	public static final String CLOSE_FILE_APPENDER_INVOKER = PACKAGE_NAME + "g";
 }

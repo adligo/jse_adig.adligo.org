@@ -10,7 +10,8 @@ public class JseRegistry {
 				new DirectoryExistsInvoker());
 		GRegistry.addInvoker(JseInvokerNames.FILE_EXISTS_INVOKER, 
 				new FileExistsInvoker());
-		
+		GRegistry.addInvoker(JseInvokerNames.CLOSE_FILE_APPENDER_INVOKER, 
+				new CloseFileAppenderInvoker());
 		//checked invokers
 		GRegistry.addCheckedInvoker(
 				JseInvokerNames.CREATE_DIRECTORY_INVOKER, 
@@ -22,5 +23,8 @@ public class JseRegistry {
 		GRegistry.addCheckedInvoker(
 				JseInvokerNames.FILE_APPENDER_FACTORY_INVOKER, 
 				new FileAppenderFactoryInvoker());
+		GRegistry.addCheckedInvoker(
+				JseInvokerNames.FILE_APPENDER_INVOKER, 
+				new FileAppenderInvoker());
 	}
 }

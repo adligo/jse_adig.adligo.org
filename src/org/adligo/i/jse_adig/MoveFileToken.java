@@ -12,6 +12,8 @@ public class MoveFileToken {
 	private String from_file_path;
 	private String to_file_path;
 	
+	public MoveFileToken() {}
+	
 	public String getFrom_file_path() {
 		return from_file_path;
 	}

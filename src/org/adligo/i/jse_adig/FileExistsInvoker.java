@@ -8,7 +8,7 @@ import org.adligo.i.util.client.StringUtils;
 
 public class FileExistsInvoker extends BaseGInvoker implements I_GInvoker<String, Boolean> {
 
-	public FileExistsInvoker() {
+	FileExistsInvoker() {
 		super(String.class, Boolean.class);
 	}
 

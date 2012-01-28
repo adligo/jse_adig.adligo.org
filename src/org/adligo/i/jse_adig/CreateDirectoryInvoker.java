@@ -12,7 +12,7 @@ public class CreateDirectoryInvoker extends BaseGInvoker implements I_GCheckedIn
 	public static final String WAS_NOT_ABLE_TO_CREATE_THE_DIRECTORY_S = " was NOT able to create the directory(s) ";
 	public static final String REQUIRES_A_NON_NULL_DIRECTORY_STRING = " requires a non null directory string.";
 
-	public CreateDirectoryInvoker() {
+	CreateDirectoryInvoker() {
 		super(String.class, Boolean.class);
 	}
 

@@ -17,7 +17,7 @@ public class FileAppenderFactoryInvoker extends BaseGInvoker implements I_GCheck
 	public static final String REQUIRES_A_NON_NULL_FILE_APPENDER_PARAMS_ARGUMENT = 
 							" requires a non null FileAppenderParams argument.";
 
-	public FileAppenderFactoryInvoker() {
+	FileAppenderFactoryInvoker() {
 		super(FileAppenderParams.class, FileAppender.class);
 	}
 
@@ -36,6 +36,7 @@ public class FileAppenderFactoryInvoker extends BaseGInvoker implements I_GCheck
 			throw ix;
 		}
 		File file = new File(fileName);
+		
 		try {
 			boolean result = file.createNewFile();
 			if (!result) {
@@ -64,7 +65,9 @@ public class FileAppenderFactoryInvoker extends BaseGInvoker implements I_GCheck
 		if (lineFeed == null) {
 			lineFeed = FileAppenderParams.UNIX_LINE_FEED;
 		}
-		FileAppender toRet = new FileAppender(writer, lineFeed);
+		//absolute path is more descriptive
+		fileName = file.getAbsolutePath();
+		FileAppender toRet = new FileAppender(writer, lineFeed, fileName);
 		return toRet;
 	}
 

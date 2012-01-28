@@ -19,16 +19,18 @@ public class FileAppenderParams {
 	private String lineFeed;
 	private String fileName;
 	
-	String getLineFeed() {
+	public FileAppenderParams() {}
+	
+	public String getLineFeed() {
 		return lineFeed;
 	}
-	void setLineFeed(String lineFeed) {
+	public void setLineFeed(String lineFeed) {
 		this.lineFeed = lineFeed;
 	}
-	String getFileName() {
+	public String getFileName() {
 		return fileName;
 	}
-	void setFileName(String fileName) {
+	public void setFileName(String fileName) {
 		this.fileName = fileName;
 	}
 }

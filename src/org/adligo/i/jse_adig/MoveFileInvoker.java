@@ -18,7 +18,7 @@ public class MoveFileInvoker extends BaseGInvoker implements I_GCheckedInvoker<M
 	public static final String REQUIRES_A_NON_EMPTY_FROM_FILE_PATH_IN_THE_MOVE_FILE_TOKEN = " requires a non empty from file path in the MoveFileToken!";
 	public static final String REQUIRES_A_NON_EMPTY_TO_FILE_PATH_IN_THE_MOVE_FILE_TOKEN = " requires a non empty to file path in the MoveFileToken!";
 
-	public MoveFileInvoker() {
+	MoveFileInvoker() {
 		super(MoveFileToken.class, Boolean.class);
 	}
 
