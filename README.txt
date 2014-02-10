@@ -1,3 +1,5 @@
+This project is depricated and the code will be moved to i_disk
+
 this project contains adig extensions that are specific to java standard edition 
 (or in other words will not work in GWT)
 
