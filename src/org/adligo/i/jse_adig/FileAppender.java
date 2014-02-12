@@ -24,7 +24,7 @@ public class FileAppender {
 	private String fileName;
 	private boolean open = true;
 	
-	FileAppender(FileWriter p, String p_lineFeed, String p_fileName) {
+	protected FileAppender(FileWriter p, String p_lineFeed, String p_fileName) {
 		writer = p;
 		if (writer == null) {
 			throw new NullPointerException(FILE_APPENDER_DOES_NOT_ACCEPT_A_NULL_WRITER);
@@ -52,11 +52,11 @@ public class FileAppender {
 		writer.close();
 	}
 
-	String getLineFeed() {
+	public String getLineFeed() {
 		return lineFeed;
 	}
 
-	String getFileName() {
+	public String getFileName() {
 		return fileName;
 	}
 
