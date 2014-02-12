@@ -4,10 +4,10 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 
-import org.adligo.i.adi.client.InvocationException;
-import org.adligo.i.adig.client.BaseGInvoker;
-import org.adligo.i.adig.client.I_GCheckedInvoker;
-import org.adligo.i.util.client.StringUtils;
+import org.adligo.i.adi.shared.InvocationException;
+import org.adligo.i.adig.shared.BaseGInvoker;
+import org.adligo.i.adig.shared.I_GCheckedInvoker;
+import org.adligo.i.util.shared.StringUtils;
 
 public class FileAppenderFactoryInvoker extends BaseGInvoker implements I_GCheckedInvoker<FileAppenderParams, FileAppender>{
 

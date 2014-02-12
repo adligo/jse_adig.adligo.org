@@ -2,10 +2,10 @@ package org.adligo.i.jse_adig;
 
 import java.io.IOException;
 
-import org.adligo.i.adig.client.BaseGInvoker;
-import org.adligo.i.adig.client.I_GInvoker;
-import org.adligo.i.log.client.Log;
-import org.adligo.i.log.client.LogFactory;
+import org.adligo.i.adig.shared.BaseGInvoker;
+import org.adligo.i.adig.shared.I_GInvoker;
+import org.adligo.i.log.shared.Log;
+import org.adligo.i.log.shared.LogFactory;
 
 public class CloseFileAppenderInvoker extends BaseGInvoker implements I_GInvoker<FileAppender, Boolean>  {
 	private static final Log log = LogFactory.getLog(CloseFileAppenderInvoker.class);

@@ -1,12 +1,11 @@
 package org.adligo.i.jse_adig;
 
-import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Collection;
 
-import org.adligo.i.adi.client.InvocationException;
-import org.adligo.i.adig.client.BaseGInvoker;
-import org.adligo.i.adig.client.I_GCheckedInvoker;
+import org.adligo.i.adi.shared.InvocationException;
+import org.adligo.i.adig.shared.BaseGInvoker;
+import org.adligo.i.adig.shared.I_GCheckedInvoker;
 
 public class FileAppenderInvoker extends BaseGInvoker implements I_GCheckedInvoker<FileAppenderToken, Boolean>{
 

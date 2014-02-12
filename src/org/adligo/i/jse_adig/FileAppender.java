@@ -3,7 +3,7 @@ package org.adligo.i.jse_adig;
 import java.io.FileWriter;
 import java.io.IOException;
 
-import org.adligo.i.util.client.StringUtils;
+import org.adligo.i.util.shared.StringUtils;
 
 /**
  * note most of the getters in this class are package

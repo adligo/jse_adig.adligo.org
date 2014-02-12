@@ -1,6 +1,6 @@
 package org.adligo.i.jse_adig;
 
-import org.adligo.i.adig.client.GRegistry;
+import org.adligo.i.adig.shared.GRegistry;
 
 public class JseRegistry {
 
